@@ -13,5 +13,7 @@ public class SalesView {
         this.model = model;
     }
 
-
+    public void getOutput(String output) {
+        System.out.println(output);
+    }
 }
