@@ -5,6 +5,7 @@ import base.Income;
 
 public class Product implements Income, IFiscal {
 
+    private String phone;
     private String nameProduct;
     private int price;
     private double weight;
@@ -22,10 +23,16 @@ public class Product implements Income, IFiscal {
         return price;
     }
 
+    public String getPhone() {
+        return phone;
+    }
     public void setPrice(int price) {
         this.price = price;
     }
 
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
     public double getWeight() {
         return weight;
     }
