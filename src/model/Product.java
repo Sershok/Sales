@@ -5,12 +5,15 @@ import base.Income;
 
 public class Product implements Income, IFiscal {
 
+    private String phone;
 
+    public String getPhone() {
+        return phone;
+    }
 
-
-
-
-
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
 
     @Override
     public double bonus(double payment) {
