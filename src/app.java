@@ -11,7 +11,16 @@ import view.SalesView;
 
 public class app {
 
+
+
     public static void main(String[] args) {
+
+        Product model = new Product();
+        SalesView view = new SalesView(model);
+        ProductController controller = new ProductController(model,view);
+
+
+
 
     }
 }
