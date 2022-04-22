@@ -18,7 +18,6 @@ public class app {
         SalesView view = new SalesView(model);
         ProductController controller = new ProductController(model, view);
 
-
         controller.runApp();
 
     }

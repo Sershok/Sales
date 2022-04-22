@@ -22,22 +22,22 @@ public class SalesView {
 
         sc = new Scanner(System.in);
 
-        title = "Product name";
+        title = "Product name: ";
         System.out.println(title);
         nameProduct = Validator.validateName(sc);
         model.setNameProduct(nameProduct);
 
-        title = "Phone client";
+        title = "Phone client: ";
         System.out.println(title);
         phone = Validator.validatePhone(sc);
         model.setPhone(phone);
 
-        title = "Enter price";
+        title = "Enter price (USD): ";
         System.out.println(title);
         price=Validator.validatePriceInput(sc);
         model.setPrice(price);
 
-        title = "Enter weight";
+        title = "Enter weight (kg): ";
         System.out.println(title);
         weight=Validator.validateQuantityInput(sc);
         model.setWeight(weight);
