@@ -31,10 +31,11 @@ public class ProductController {
         double totalIncome = model.calculate(income,bonus);
         String totalIncomeRounder = Rounder.roundValue(totalIncome);
 
-        String output = "Product name: " + nameProduct +
+        String output = "------------------------------\n"
+                + "Product name: " + nameProduct +
         "\nPhone: " + phone + "\nSum: " + incomeRounder
-                + "\nBonus: " + bonusRounder + "\nTo pay:"
-                + totalIncomeRounder + "\nPhone bonus:" + bonusRounder;
+                + "\nBonus: " + bonusRounder + "\nTo pay: "
+                + totalIncomeRounder + "\nPhone bonus: " + bonusRounder;
 
         view.getOutput(output);
     }
