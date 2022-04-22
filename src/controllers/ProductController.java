@@ -36,6 +36,7 @@ public class ProductController {
                 + "\nBonus: " + bonusRounder + "\nTo pay:"
                 + totalIncomeRounder + "\nPhone bonus:" + bonusRounder;
 
+        view.getOutput(output);
     }
 
 }
